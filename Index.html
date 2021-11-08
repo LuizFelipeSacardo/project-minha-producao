@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Minha Produção - Cadastrar</title>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <ul class="menu" >
+        <a class="menuLink" href="Index.html">
+          <li class="menuItem menuLinkActive">Cadastrar Venda</li>
+        </a>
+        <a class="menuLink" href="MinhaProducao.html">
+          <li class="menuItem">Minha Produção</li>
+        </a>
+        <a class="menuLink" href="Opcoes.html">
+          <li class="menuItem">Opções</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <form class="form" action="submit">      
+        <fieldset class="fieldSet">
+          <label for="saleDate">Data da Venda:</label>
+          <input type="date" name="" id="saleDate" class="inputField">
+        </fieldset>
+        <fieldset class="fieldSet">
+          <label for="productSelect">Produto:</label>
+            <select name="productSelect" id="productSelect" class="inputField">
+              <option value="">--Selecione o Produto --</option>
+              <option value="seguro">Seguro</option>
+              <option value="capitalizacao">Capitalização</option>
+              <option value="consorcio">Consórcio</option>
+              <option value="contaCorrente">Conta Corrente</option>
+              <option value="cartaoDeCredito">Cartão de Credito</option>
+              <option value="parcelamentoDeFatura">Parcelamento De Fatura</option>
+            </select>
+        </fieldset>
+        <fieldset class="fieldSet">
+          <label for="saleQuantity">Quantidade:</label>
+          <input type="number" class="inputField" placeholder="quantidade">
+        </fieldset>
+        <fieldset class="fieldSet">
+          <label for="saleValue">Valor da Venda:</label>
+          <input type="number" name="" id="saleValue" class="inputField" placeholder="valor da venda">
+        </fieldset>
+        <button type="submit" class="sendButton" id="sendButton">Salvar</button>      
+    </form>
+  </main>
+  <footer class="footer">    
+  </footer>
+  
+</body>
+</html>
